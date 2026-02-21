@@ -98,15 +98,7 @@ LogicLens/
 5. **Contact** — Centered form with accessible input fields
 6. **Footer** — Social links and copyright information
 
----
 
-## Future Enhancements
-
-- [ ] Add form submission backend integration (Formspree/EmailJS)
-- [ ] Implement project filtering by technology tags
-- [ ] Integrate real project screenshots and live demo links
-- [ ] Add subtle parallax effects on scroll
-- [ ] Include photography portfolio section
 
 ---
 
@@ -127,3 +119,4 @@ This project is open-source and available for educational purposes. Feel free to
 ---
 
 **© 2026 Stanley Pratama Teguh** — Coding with Structure, Designing with Detail.
+
