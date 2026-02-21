@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a 3rd Semester CS Student combining back-end logic with UI design and photography.">
+    <title>Aspiring Developer | Logic Meets Lens</title>
+
+    <!-- Preconnect to external assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/jpg" href="assets/foto_profil.jpg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION / HEADER                          -->
+    <!-- ============================================ -->
+    <header class="header">
+        <nav class="nav container" aria-label="Main Navigation">
+            <a href="#home" class="nav__logo">
+                Logic<span>Lens</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav__list" id="nav-menu">
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <li class="nav__item"><a href="#home" class="nav__link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link"><i class="fa-solid fa-user"></i> About</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+
+            <div class="nav__controls">
+                <button id="theme-toggle" class="nav__theme-btn" aria-label="Switch to light mode" title="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ============================================ -->
+        <!-- HERO SECTION                                 -->
+        <!-- ============================================ -->
+        <section id="home" class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Logic Meets <span class="text-highlight">Lens</span>.</h1>
+                    <p class="hero__subtitle">Aspiring Developer with a designer's eye. 3rd Semester Computer Science student bridging the gap between rigorous structure and visual storytelling.</p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">Explore Projects</a>
+                        <a href="#contact" class="btn btn--secondary">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ABOUT SECTION                                -->
+        <!-- ============================================ -->
+        <section id="about" class="about section-padding">
+            <div class="about__container container grid">
+                <!-- Column 1: Media -->
+                <figure class="about__image-wrapper">
+                    <!-- Placeholder for local path: assets/images/profile.jpg -->
+                    <img src="assets/foto_profil.jpg" alt="Professional portrait of a Computer Science student" class="about__img" width="400" height="400">
+                    <figcaption class="about__caption">CS Student & Event Organizer based in the digital world.</figcaption>
+                </figure>
+
+                <!-- Column 2: Biography -->
+                <div class="about__content">
+                    <h3 class="section-title">The Programmer Behind the Lens</h3>
+                    <p class="about__text">
+                        As a Computer Science student, I find beauty in the underlying architecture of code, much like the composition of a photograph. My passion for photography drives my eye for detail, while my technical studies in Python and Java provide the logical structure needed to build performant tools. 
+                    </p>
+                    <p class="about__text">
+                        Beyond the screen, I leverage my experience as an event organizer to ensure seamless workflows and clear communication in every collaborative project I undertake.
+                    </p>
+                    <div class="about__cta">
+                        <a href="assets/CV ATS.pdf" class="btn btn--outline" download aria-label="Download my Resume PDF">
+                            <i class="fa-solid fa-file-pdf"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- PROJECTS SECTION                             -->
+        <!-- ============================================ -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <h3 class="section-title text-center">Development Journey</h3>
+                
+                <div class="projects__grid">
+                    <!-- Project Card 1: Calculator -->
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+                            <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=Calculator+App" alt="Screenshot of Logic-based Calculator" class="project-card__img">
+                        </div>
+                        <div class="project-card__content">
+                            <h4 class="project-card__title">Logic-First Calculator</h4>
+                            <p class="project-card__description">A comprehensive study in arithmetic logic and robust error handling, applying core CS principles to a clean user interface.</p>
+                            
+                            <div class="project-card__tech" aria-label="Technologies used">
+                                <span class="tag">Java</span>
+                                <span class="tag">Logic</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" aria-label="View Calculator Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="#" class="project-card__link project-card__link--demo" aria-label="View Calculator Live Demo">
+                                    <i class="fa-solid fa-play"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: To-Do List -->
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+                            <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=To-Do+List+App" alt="Screenshot of To-Do List Manager" class="project-card__img">
+                        </div>
+                        <div class="project-card__content">
+                            <h4 class="project-card__title">Workflow Manager</h4>
+                            <p class="project-card__description">An exploration of DOM manipulation and user workflow, designed to simplify daily task management through intuitive interaction.</p>
+                            
+                            <div class="project-card__tech" aria-label="Technologies used">
+                                <span class="tag">HTML</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">UX</span>
+                            </div>
+
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" aria-label="View Workflow Manager Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="#" class="project-card__link project-card__link--demo" aria-label="View Workflow Manager Live Demo">
+                                    <i class="fa-solid fa-play"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: Blog Layout -->
+                    <article class="project-card">
+                        <div class="project-card__image-container">
+                            <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=Blog+Layout+Design" alt="Screenshot of Editorial Blog Template" class="project-card__img">
+                        </div>
+                        <div class="project-card__content">
+                            <h4 class="project-card__title">Editorial Blog Template</h4>
+                            <p class="project-card__description">A study in responsive design and modern typography, ensuring that visual storytelling remains accessible across all devices.</p>
+                            
+                            <div class="project-card__tech" aria-label="Technologies used">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Photography</span>
+                            </div>
+
+                            <div class="project-card__links">
+                                <a href="#" class="project-card__link" aria-label="View Blog Template Source Code on GitHub">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                                <a href="#" class="project-card__link project-card__link--demo" aria-label="View Blog Template Live Demo">
+                                    <i class="fa-solid fa-play"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- CONTACT SECTION                              -->
+        <!-- ============================================ -->
+        <section id="contact" class="contact section-padding">
+            <div class="contact__container container">
+                <h3 class="section-title text-center">Get in Touch</h3>
+                <form action="#" class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Let's discuss a project..." required></textarea>
+                    </div>
+                    <div class="form__actions">
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <p class="footer__copyright">&copy; 2026 Stanley Pratama Teguh. Coding with Structure, Designing with Detail.</p>
+                
+                <ul class="footer__socials" aria-label="Social Media Links">
+                    <li><a href="https://www.github.com/LukasMystic" aria-label="Link to GitHub profile"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/stanley-pratama-teguh/" aria-label="Link to LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <!-- <li><a href="#" aria-label="Link to Twitter/X profile"><i class="fa-brands fa-x-twitter"></i></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
