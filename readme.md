@@ -108,7 +108,7 @@ Building the future one line of code at a time. Let's collaborate!
 
 - **GitHub:** [@LukasMystic](https://github.com/LukasMystic)
 - **LinkedIn:** [Stanley Pratama Teguh](https://www.linkedin.com/in/stanley-pratama-teguh/)
-- **Portfolio:** [Live Demo](#) *(Deploy to Netlify/Vercel for live link)*
+- **Portfolio:** [Live Demo](https://testportofolio-ochre.vercel.app/) *(Deploy to Netlify/Vercel for live link)*
 
 ---
 
@@ -119,4 +119,5 @@ This project is open-source and available for educational purposes. Feel free to
 ---
 
 **© 2026 Stanley Pratama Teguh** — Coding with Structure, Designing with Detail.
+
 
